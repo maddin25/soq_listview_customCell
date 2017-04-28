@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:ListViewContextMenu" x:Class="ListViewContextMenu.ListViewContextMenuPage">
+	<ListView x:Name="MyListView">
+		<ListView.ItemTemplate>
+			<DataTemplate>
+				<ViewCell>
+					<ViewCell.ContextActions>
+						<MenuItem Text="Action" Command="{Binding OnAction}" CommandParameter="{Binding .}"/>
+					</ViewCell.ContextActions>
+					
+					<Label Text="{Binding Name}" />
+				</ViewCell>
+			</DataTemplate>
+		</ListView.ItemTemplate>
+	</ListView>
+</ContentPage>
