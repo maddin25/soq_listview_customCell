@@ -7,7 +7,7 @@
 					<ViewCell.ContextActions>
 						<MenuItem Text="Action" Command="{Binding OnAction}" CommandParameter="{Binding .}"/>
 					</ViewCell.ContextActions>
-					
+
 					<Label Text="{Binding Name}" />
 				</ViewCell>
 			</DataTemplate>
